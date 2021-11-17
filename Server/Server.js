@@ -4,7 +4,7 @@
  * @author Jirka Dell'Oro-Friedl, HFU, 2021
  */
 import { FudgeServer } from "../FudgeNet/Server/FudgeServer.js";
-let port = 8081;
+let port = process.env.PORT;
 if (port == undefined)
     port = parseInt(process.argv[2]);
 if (!port) {
